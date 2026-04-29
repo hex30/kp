@@ -1,0 +1,77 @@
+/* 1. Definisikan file font yang sudah kamu download di paling atas */
+@font-face {
+  font-family: "Manrope"; /* Ini nama bebas yang kamu buat */
+  src: url("../assets/fonts/Manrope-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900; /* Karena variable font, kita kasih rentang 100 sampai 900 */
+  font-style: normal;
+}
+
+/* 2. Gabungkan ke dalam :root yang sudah kamu buat */
+:root {
+  /* Font Setting */
+  --font-main: "Manrope", sans-serif;
+
+  --primary-color: #004250;
+  --secondary-color: #c5a059;
+  --bg-light: #f8fafb;
+  --white: #ffffff;
+
+  /* Warna Teks */
+  --text-primary: #005b6e;
+  --text-secondary: #3f484b;
+
+  /* Warna UI Elements */
+  --card-bold:900;
+  --card-medium:600;
+  --card-thin:400;
+  --fsize-card:2rem;
+  --fsize-mini:1rem
+  --card-bg: #ffffff;
+  --border-color: #e2e8f0;
+  --bg-radius: 15px;
+  --bg-padding:2rem;
+  --gap-card:2rem;
+  --btn-hover: #08626c;
+  --bg-item: #e6e8ea;
+  --badge-bg:#B2EBFF;
+  --bg-form:#70787C;
+  --btn-linear: linear-gradient(135deg, #004250 0%, #005B6E 100%);
+
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+  --banner-line: 1.1;
+
+  --input-bg: #ebebeb;
+  --input-radius: 8px;
+  --input-padding: 0.8rem;
+  --label-weight: 600;
+
+
+}
+
+/* 3. Terapkan secara global */
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-light);
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem 4rem 4rem 4rem;
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Sangat penting agar padding tidak merusak lebar elemen */
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px; /* Basis 1rem = 16px */
+}
