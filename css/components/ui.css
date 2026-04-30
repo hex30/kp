@@ -68,6 +68,25 @@
   color: var(--white);
 }
 
+.nav-btn-minicard {
+  width: fit-content;
+  height: 2.5rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  background: #ebebeb;
+  color: var(--text-dark);
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.nav-btn-minicard.active {
+  background: var(--btn-linear);
+  color: var(--white);
+}
+
 .btn-submit {
   padding: 12px 25px;
   border: none;
@@ -135,3 +154,24 @@ label {
     color: #333;
     transition: color 0.3s ease;
 }
+
+.destination-categorization {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tag-category {
+  color: var(--color-categories);
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.category-tag:not(:last-child)::after {
+  content: "|";
+  margin-left: 10px;
+  margin-right: 10px;
+  color: var(--color-categories);
+  font-weight: var(--card-medium);
+}
+

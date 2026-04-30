@@ -58,8 +58,6 @@
   width: 90%;
 }
 
-
-
 .hero-overlay h2 {
   color: var(--white);
   font-weight: 900;
@@ -71,6 +69,82 @@
   color: var(--white);
   font-size: 1rem;
   opacity: 70%;
+}
+
+.destination-container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
+}
+
+.popular-destination {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.popular-destination .destination-title {
+  height: 30px;
+  font-size: 2rem;
+  color: var(--text-primary);
+}
+
+.destination-container .card-destination {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--white);
+  width: 100%;
+  height: auto;
+  border-radius: var(--bg-radius);
+  box-shadow: var(--shadow-soft);
+}
+
+
+
+.card-destination .destination-visual {
+  width: 100%;
+  height: 60%;
+}
+.card-destination .destination-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: var(--bg-radius);
+  border-top-right-radius: var(--bg-radius);
+}
+
+.destination-content h2 {
+  color: var(--text-secondary);
+  font-weight: var(--card-bold);
+  font-size: 1.5rem;
+}
+
+.destination-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.destination-content .footer {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.destination-content .footer .nav-btn-minicard {
+  align-self: center;
+}
+
+.destination-content h3 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  font-weight: var(--card-bold);
+}
+.destination-content .offer, .day {
+  color: var(--text-secondary);
+  font-weight: var(--card-medium);
+  font-size: 1rem;
 }
 
 .services-container {

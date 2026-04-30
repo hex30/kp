@@ -26,7 +26,7 @@
   --card-thin:400;
   --fsize-card:2rem;
   --fsize-mini:1rem
-  --card-bg: #ffffff;
+  --card-bg:#ffffff;
   --border-color: #e2e8f0;
   --bg-radius: 15px;
   --bg-padding:2rem;
@@ -35,6 +35,7 @@
   --bg-item: #e6e8ea;
   --badge-bg:#B2EBFF;
   --bg-form:#70787C;
+  --tag-categories:#E5E5E5;
   --btn-linear: linear-gradient(135deg, #004250 0%, #005B6E 100%);
 
   --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.05);
