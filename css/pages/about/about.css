@@ -1,0 +1,17 @@
+.history-container {
+    display: flex;
+    gap: 20px;
+     background-color: var(--white);
+}
+
+.history-content {
+    flex: 1;
+    max-width: 50%;
+   
+}
+
+.history-content h2 {
+    font-size: 3rem;
+    font-weight: var(--card-bold);
+}
+

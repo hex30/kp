@@ -85,6 +85,7 @@
 .popular-destination .destination-title {
   height: 30px;
   font-size: 2rem;
+  font-weight: var(--card-bold);
   color: var(--text-primary);
 }
 

@@ -11,7 +11,7 @@ export function renderNavbar() {
             <ul class="nav-links">
                 <li><a href="../../index.html">Beranda<a/></li>
                 <li><a href="../../pages/layanan/rute.html">Layanan<a/></li>
-                <li><a href="#">Tentang Kami<a/></li>
+                <li><a href="../../pages/about/aboutUs.html">Tentang Kami<a/></li>
             </ul>
             <div class="nav-auth><a href="#" class="btn-admin"></a></div>
         </div>
