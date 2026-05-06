@@ -5,11 +5,25 @@
   font-weight: 100 900; /* Karena variable font, kita kasih rentang 100 sampai 900 */
   font-style: normal;
 }
+@font-face {
+  font-family: "jakarta-italic"; /* Ini nama bebas yang kamu buat */
+  src: url("../assets/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900; /* Karena variable font, kita kasih rentang 100 sampai 900 */
+  font-style:italic;
+}
+@font-face {
+  font-family: "jakarta"; /* Ini nama bebas yang kamu buat */
+  src: url("../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900; /* Karena variable font, kita kasih rentang 100 sampai 900 */
+  font-style: normal;
+}
 
 /* 2. Gabungkan ke dalam :root yang sudah kamu buat */
 :root {
   /* Font Setting */
   --font-main: "Manrope", sans-serif;
+  --font-secondary: "jakarta", sans-serif;
+  --font-third: "jakarta-italic", sans-serif;
 
   --primary-color: #004250;
   --secondary-color: #c5a059;
@@ -18,7 +32,7 @@
 
   /* Warna Teks */
   --text-primary: #005b6e;
-  --text-secondary: #3f484b;
+  --text-secondary: #4D5B6E;
 
   /* Warna UI Elements */
   --card-bold:900;
@@ -39,6 +53,7 @@
   --btn-linear: linear-gradient(135deg, #004250 0%, #005B6E 100%);
 
   --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.05);
+  --shadow-img: 0 0 8px 0 rgba(0, 66, 80, 0.5);
 
   --banner-line: 1.1;
 
@@ -46,6 +61,9 @@
   --input-radius: 8px;
   --input-padding: 0.8rem;
   --label-weight: 600;
+
+  --badge2-color:#E6E8EA;
+  --foot-color:#F2F4F5;
 
 
 }
@@ -56,6 +74,10 @@ body {
   background-color: var(--bg-light);
   color: var(--text-secondary);
   margin: 0;
+}
+p,
+ul {
+  font-family: var(--font-secondary);
 }
 
 main {

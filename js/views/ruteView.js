@@ -59,7 +59,7 @@ export const ruteView = () => {
 
         <aside class="visual-content">
             <figure>
-                <img src="../../assets/img/rute-visual.jpg" alt="Visual Rute">
+                <img src="/assets/images/contoh.jpg" alt="Visual Rute">
                 <figcaption>
                     <h3>Kenyamanan Ekstra</h3>
                     <p>Armada premium kami dirancang untuk memastikan perjalanan Anda sangat nyaman.</p>

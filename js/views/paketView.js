@@ -121,12 +121,12 @@ export const paketView = () => {
 
             <div class="package-visual">
                 <figure>
-                    <img src="" alt="">
+                    <img src="/assets/images/contoh.jpg" alt="">
+                    <figcaption>
+                        <h3>Pengiriman Aman & Terlindungi</h3>
+                        <p>Setiap paket ditangani dengan standar profesional untuk memastikan barang anda tiba dengan selamat</p>
+                    </figcaption>
                 </figure>
-                <figcaption>
-                    <h3>Pengiriman Aman & Terlindungi</h3>
-                    <p>Setiap paket ditangani dengan standar profesional untuk memastikan barang anda tiba dengan selamat</p>
-                </figcaption>
             </div>
         </div>
     </article> 

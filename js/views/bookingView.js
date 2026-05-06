@@ -5,14 +5,14 @@ const fleetData = [
         capacity: "14-19 Kursi",
         description: "Cocok untuk rombongan menengah, nyaman dan tangguh.",
         price: "1.200.000",
-        image: "https://cdn.carsome.id/news/Daihatsu-Xenia-white.jpg"
+        image: "/assets/images/contoh.jpg"
     },
     {
         name: "Toyota Hiace Commuter",
         capacity: "15 Kursi",
         description: "Eksekutif dan premium untuk perjalanan jarak jauh.",
         price: "1.500.000",
-        image: "../../assets/img/hiace.jpg"
+        image: "/assets/images/contoh.jpg"
     }
 ];
 

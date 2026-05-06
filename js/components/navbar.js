@@ -2,7 +2,8 @@ import { API_BASE_URL } from "../config.js";
 
 export function renderNavbar() {
   const navbarPlaceholder = document.getElementById("navbar-placeholder");
-  if (!navbarPlaceholder) return;
+  if (!navbarPlaceholder)
+    return;
 
   const navbarString = `
     <nav class="navbar">

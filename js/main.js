@@ -1,4 +1,5 @@
 import { renderNavbar } from "./components/navbar.js";
+import { renderFooter } from "./components/footer.js";
 import { ruteView, setupRuteListener } from "./views/ruteView.js";
 import { bookingView, setupBookingListener } from "./views/bookingView.js";
 import { paketView, setupPackageListener } from "./views/paketView.js";
@@ -25,12 +26,16 @@ const views = {
 // --- 2. FUNGSI NAVIGASI ---
 // Fungsi ini tugasnya cuma bongkar-pasang konten.
 function navigate(renderFn, listenerFn) {
-    serviceContent.innerHTML = renderFn(); // Pasang HTML baru
-    if (listenerFn) listenerFn();          // Pasang "otak" (event listener) baru
+    if (!serviceContent)
+        return;
+
+    serviceContent.innerHTML = renderFn(); 
+    if (listenerFn) listenerFn();          
 }
 
 document.addEventListener("DOMContentLoaded", () => {
     renderNavbar();
+    renderFooter();
     
     // Tampilan default saat pertama buka
     navigate(views.rute.render, views.rute.listener);

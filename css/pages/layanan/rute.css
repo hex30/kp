@@ -79,3 +79,6 @@
     background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
     color: white;
 }
+.visual-content figcaption h3 {
+    color: white;
+}
