@@ -1,0 +1,101 @@
+/* 1. Definisikan file font yang sudah kamu download di paling atas */
+@font-face {
+  font-family: "Manrope"; /* Ini nama bebas yang kamu buat */
+  src: url("../assets/fonts/Manrope-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900; /* Karena variable font, kita kasih rentang 100 sampai 900 */
+  font-style: normal;
+}
+@font-face {
+  font-family: "jakarta-italic"; /* Ini nama bebas yang kamu buat */
+  src: url("../assets/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900; /* Karena variable font, kita kasih rentang 100 sampai 900 */
+  font-style:italic;
+}
+@font-face {
+  font-family: "jakarta"; /* Ini nama bebas yang kamu buat */
+  src: url("../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900; /* Karena variable font, kita kasih rentang 100 sampai 900 */
+  font-style: normal;
+}
+
+/* 2. Gabungkan ke dalam :root yang sudah kamu buat */
+:root {
+  /* Font Setting */
+  --font-main: "Manrope", sans-serif;
+  --font-secondary: "jakarta", sans-serif;
+  --font-third: "jakarta-italic", sans-serif;
+
+  --primary-color: #004250;
+  --secondary-color: #c5a059;
+  --bg-light: #f8fafb;
+  --white: #ffffff;
+
+  /* Warna Teks */
+  --text-primary: #005b6e;
+  --text-secondary: #4D5B6E;
+
+  /* Warna UI Elements */
+  --card-bold:900;
+  --card-medium:600;
+  --card-thin:400;
+  --fsize-card:2rem;
+  --fsize-mini:1rem
+  --card-bg:#ffffff;
+  --card-bg-sc:#F2F4F5;
+  --border-color: #e2e8f0;
+  --bg-radius: 15px;
+  --bg-padding:2rem;
+  --gap-card:2rem;
+  --btn-hover: #08626c;
+  --bg-item: #e6e8ea;
+  --badge-bg:#B2EBFF;
+  --bg-form:#70787C;
+  --tag-categories:#E5E5E5;
+  --btn-linear: linear-gradient(135deg, #004250 0%, #005B6E 100%);
+
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.05);
+  --shadow-img: 0 0 8px 0 rgba(0, 66, 80, 0.5);
+
+  --banner-line: 1.1;
+
+  --input-bg: #ebebeb;
+  --input-radius: 8px;
+  --input-padding: 0.8rem;
+  --label-weight: 600;
+
+  --badge2-color:#E6E8EA;
+  --foot-color:#F2F4F5;
+
+
+}
+
+/* 3. Terapkan secara global */
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-light);
+  color: var(--text-secondary);
+  margin: 0;
+}
+p,
+ul {
+  font-family: var(--font-secondary);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem 4rem 4rem 4rem;
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Sangat penting agar padding tidak merusak lebar elemen */
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px; /* Basis 1rem = 16px */
+}

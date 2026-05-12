@@ -1,0 +1,103 @@
+/* =========================================
+   SIDEBAR COMPONENT
+========================================= */
+
+/* 1. Layout Dasar Sidebar */
+.sidebar {
+  width: 260px; /* Lebar presisi sesuai proporsi desain */
+  height: 100vh; /* Penuhi tinggi layar */
+  background-color: var(--white);
+  padding: 2rem 1.25rem;
+  
+  /* Flexbox untuk memisahkan header, menu utama, dan menu bawah */
+  display: flex;
+  flex-direction: column;
+  
+  /* Agar sidebar tidak ikut ter-scroll saat konten utama di-scroll */
+  position: sticky;
+  top: 0;
+  
+  /* Garis batas halus di sebelah kanan */
+  border-right: 1px solid var(--border-color); 
+}
+
+/* 2. Area Brand (Logo & Judul) */
+.sidebar__header {
+  margin-bottom: 2.5rem;
+  padding: 0 0.75rem; /* Sejajar dengan teks menu */
+}
+
+.brand__title {
+  color: var(--primary-color); /* #004250 */
+  font-size: 1.25rem;
+  font-weight: 800; /* Cetak tebal sesuai gambar */
+  margin-bottom: 0.2rem;
+  letter-spacing: -0.5px;
+}
+
+.brand__subtitle {
+  font-family: var(--font-secondary);
+  color: #94A3B8; /* Warna abu-abu terang spesifik untuk subtitle */
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* 3. Area Navigasi Utama */
+.sidebar__nav {
+  flex-grow: 1; /* Mendorong footer ke paling bawah */
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Jarak antar menu */
+}
+
+/* 4. Gaya Dasar Tombol Menu */
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.85rem 1rem;
+  text-decoration: none;
+  
+  /* Menggunakan font sekunder (Jakarta Sans) sesuai global CSS-mu */
+  font-family: var(--font-secondary);
+  color: var(--text-secondary); /* #4D5B6E */
+  font-size: 0.95rem;
+  font-weight: 600;
+  
+  border-radius: var(--input-radius); /* Sudut membulat 8px */
+  transition: all 0.2s ease; /* Transisi halus saat di-hover */
+}
+
+.nav-icon {
+  font-size: 1.2rem;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+/* 5. State AKTIF (Menu Dashboard Kuning) */
+.nav-item--active .nav-link {
+  background-color: #F8D383; /* Warna kuning solid sesuai desain gambar */
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.nav-item--active .nav-icon {
+  color: var(--primary-color);
+}
+
+/* 6. State HOVER (Saat disorot mouse) */
+.nav-link:hover:not(.nav-item--active .nav-link) {
+  background-color: var(--bg-item); /* #e6e8ea */
+  color: var(--primary-color);
+}
+
+/* 7. Area Footer (Settings & Support) */
+.sidebar__footer {
+  margin-top: auto; /* Memastikan posisi selalu di dasar */
+  padding-top: 1.5rem;
+}

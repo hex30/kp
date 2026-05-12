@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../admin/css/components/sidebar.css">
+    <link rel="stylesheet" href="../users/css/global.css">
+    <link rel="stylesheet" href="../admin/css/pages/dashboard.css">
+    <link rel="stylesheet" href="../admin/css/components/ui.css">
+    
+</head>
+<body class="dashboard-content">
+    <header>
+
+    </header>
+    <aside>
+        <div id="sidebar"></div>
+    </aside>
+    <main class="content-area">
+        <section id="pageHeader" class="page-header">
+            <div class="header-content">
+                <h1 class="page-title">Pusat Kendali Operasional</h1>
+                <p class="page-description">Pantau pergerakan armada, status pengiriman, dan performa harian.</p>
+            </div>
+        </section>
+        
+        <div class="dashboard-grid">
+            <div class="grid-colomn-main">
+                <section class="fleet-status">
+                    <header class="section-header">
+                        <h2 class="section-title">Unit Sedang Berangkat</h2>
+                    </header>
+                    <div class="card-list">
+                        <article class="card fleet-card">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <span class="badge-service-categories">
+                                    Rute Reguler
+                                    </span>
+                                    <span class="vehicle">
+                                        Luxio
+                                    </span>
+                                </div>
+
+                                <div class="card-info">
+                                    <h3 class="driver-name">
+                                        Budi Santoso
+                                    </h3>
+                                    <div class="fleet-stats">
+                                        <span class="stat-item">
+                                            12/14 Penumpang
+                                        </span>
+                                        <span class="stat-item">
+                                            Rp. 200.000.000
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article> 
+                            <div class="card-route">
+                                <div class="route-labels">
+                                    <span class="location">Ciamis</span>
+                                    <span class="location">Jakarta</span>
+                                </div>
+
+                                <div class="route-track"></div>
+                                    <p class="route-est">Estimasi Tiba Pada 14:40</p>
+                                </div>
+                            </div>
+                    </div>
+                </section>
+
+                <aside class="grid-column-side"> 
+                    <section class="card widget-packages" id="activePackages">
+                        <header class="widget-header">
+                            <h3 class="widget-title">Titipan Paket Aktif</h3>
+                        </header>
+                        <ul class="package-list">
+                            </ul>
+                        <button class="cta-btn">Kelola Paket</button>
+                    </section>
+
+                    <section class="card widget-revenue" id="dailyRevenue">
+                        <p class="revenue-label">Total Pendapatan Hari Ini</p>
+                        <h3 class="revenue-amount">IDR 14.5M</h3>
+                        <span class="revenue-trend trend--up">+12% dari kemarin</span>
+                    </section>
+                </aside>
+        </div>
+    </main>
+    <script type="module" src="../admin/js/main.js"></script>
+</body>
+</html>
