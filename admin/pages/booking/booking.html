@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Management - Rini Trans Putri</title>
+    <link rel="stylesheet" href="booking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="admin-dashboard">
+
+    <aside class="sidebar">...</aside>
+
+    <main class="main-content">
+        <header class="page-header">
+            <h1 class="page-title">Booking Management</h1>
+            <div class="header-actions">
+                <input type="text" class="search-input" placeholder="Search bookings...">
+            </div>
+        </header>
+
+        <nav class="main-tabs">
+            <button class="tab-btn active">Penumpang</button>
+            <button class="tab-btn">Paket Titipan</button>
+        </nav>
+
+        <div class="view-toggle-group">
+            <button id="btn-regular-route" class="toggle-btn active">Rute Rutin</button>
+            <button id="btn-charter-booking" class="toggle-btn">Booking 1 Mobil</button>
+        </div>
+
+        <section id="dynamic-booking-content" class="booking-content-area">
+            </section>
+
+    </main>
+
+   <script type="module" src="mainBooking.js"></script>
+</body>
+</html>
